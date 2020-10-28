@@ -27,6 +27,10 @@ png("plot2.png", width=480, height=480)
 plot(x = powerDT[, dateTime], y = powerDT[, Global_active_power], type="l", xlab="", ylab="Global Active Power (kilowatts)")
 dev.off()
 
+```
+![](https://github.com/ironfact/Exploratory-Data-Analysis/blob/main/plot2.png?raw=true)
+```R
+
 # Code for the third graph solution
 
 powerDT <- powerDT[(dateTime >= "2007-02-01") & (dateTime < "2007-02-03")]
@@ -36,6 +40,10 @@ lines(powerDT[, dateTime], powerDT[, Sub_metering_2],col="red")
 lines(powerDT[, dateTime], powerDT[, Sub_metering_3],col="blue")
 legend("topright", col=c("black","red","blue"), c("Sub_metering_1  ","Sub_metering_2  ", "Sub_metering_3  "),lty=c(1,1), lwd=c(1,1))
 dev.off()
+
+```
+![](https://github.com/ironfact/Exploratory-Data-Analysis/blob/main/plot3.png?raw=true)
+```R
 
 # Code for the fourth graph solution
 
@@ -54,3 +62,7 @@ legend("topright", col=c("black","red","blue"), c("Sub_metering_1  ","Sub_meteri
 # Plot 4
 plot(powerDT[, dateTime], powerDT[,Global_reactive_power], type="l", xlab="datetime", ylab="Global_reactive_power")
 dev.off()
+
+```
+![](https://github.com/ironfact/Exploratory-Data-Analysis/blob/main/plot4.png?raw=true)
+```R
