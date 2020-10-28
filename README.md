@@ -10,6 +10,7 @@ powerDT <- powerDT[(Date >= "2007-02-01") & (Date <= "2007-02-02")]
 png("plot1.png", width=480, height=480)
 hist(powerDT[, Global_active_power], main="Global Active Power", xlab="Global Active Power (kilowatts)", ylab="Frequency", col="Red")
 dev.off()
+https://github.com/ironfact/Exploratory-Data-Analysis/blob/main/plot1.png?raw=true
 
 # Code for the second graph solution
 
